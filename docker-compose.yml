@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile-apache
+    container_name: cont-apache
+    ports:
+      - "8080:80"
+
+  mysql:
+    build:
+      context: .
+      dockerfile: Dockerfile-mysql
+    container_name: cont-bd
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./bbdd:/var/lib/mysql
+

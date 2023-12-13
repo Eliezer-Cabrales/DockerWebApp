@@ -1,0 +1,15 @@
+# Utilizamos la ultima imagen de MySQL
+FROM mysql:8.0.34
+
+# Configuración de variables de entorno para la contraseña de root de MySQL
+# Este proyecto es muy sencillo, nos conectaremos directamente con root
+ENV MYSQL_ROOT_PASSWORD=1234
+ENV MYSQL_DATABASE=carro
+ENV MYSQL_USER=ejemplo
+ENV MYSQL_PASSWORD=1234
+
+# Copiamos nuestro script de inicialización de la base de datos a la ubicación adecuada
+COPY ./dump.sql /docker-entrypoint-initdb.d/
+
+# Exponemos el puerto 3306
+EXPOSE 3306
