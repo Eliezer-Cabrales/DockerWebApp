@@ -1,6 +1,6 @@
 # DockerWebApp
 # Introducción
-Este proyecto se basa en el uso de Docker Compose para desplegar automáticamente dos contenedores, un Apache PHP 8.0.28 y un MySQL 8.0.34 que manejan una aplición web que también hace uso de la librería Fpdf para generar un cuadrante de disponibilidad en base a fechas y sexo de los trabajadores. <br>
+Este proyecto se basa en el uso de Docker Compose para desplegar automáticamente dos contenedores, un Apache PHP 8.0.28 y un MySQL 8.0.34 que manejan una aplicación web que también hace uso de la librería Fpdf para generar un cuadrante de disponibilidad en base a fechas y sexo de los trabajadores. <br>
 Esta aplicación web es una aplicación sencilla que usa Apache y MySql. Por motivos de privacidad y seguridad, la finalidad de la aplicación ha sido generalizada y tampoco incluye datos personales, imágenes o lugares geográficos reales. <br>
 # Instalación y desinstalación
 
