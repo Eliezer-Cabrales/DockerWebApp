@@ -4,11 +4,11 @@ Este proyecto se basa en el uso de Docker Compose para desplegar automáticament
 Esta aplicación web es una aplicación sencilla que usa Apache y MySql. Por motivos de privacidad y seguridad, la finalidad de la aplicación ha sido generalizada y tampoco incluye datos personales, imágenes o lugares geográficos reales. <br>
 # Instalación y desinstalación
 
-- Instalamos Docker y Docker Compose.
+- Instalamos Docker y Docker Compose. Es importante también desactivar el SElinux
 - Ejecutamos:  
-  > docker-compose up
+  > docker compose up
 - Para detener el servicio: 
-  > docker-compose down
+  > docker compose down
 
 # Uso de la Aplicación Web
 
